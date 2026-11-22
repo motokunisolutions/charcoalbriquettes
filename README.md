@@ -10,13 +10,15 @@ A simple static website (no database, no coding tools needed). It works on GitHu
 4. Go to **Settings → Pages**. Under *Build and deployment*, set Source to **Deploy from a branch**, branch **main**, folder **/ (root)**, and click **Save**.
 5. After 1–2 minutes GitHub shows your live address (https://YOUR-USERNAME.github.io/briquettes-site/). Open it to check.
 
-## Connect your domain
+## Connect charcoalbriquettes.co.ke (DNS is on Cloudflare)
 
-1. In **Settings → Pages → Custom domain**, type your domain (e.g. `yourdomain.co.ke`) and Save.
-2. At your domain registrar, open DNS settings and add these records:
-   - Four **A** records for `@` pointing to: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - One **CNAME** record for `www` pointing to `YOUR-USERNAME.github.io`
-3. Wait (minutes to a few hours), then tick **Enforce HTTPS** in Settings → Pages.
+The `CNAME` file in this folder already contains your domain. Then:
+
+1. In GitHub: **Settings -> Pages -> Custom domain**, enter `charcoalbriquettes.co.ke`, Save.
+2. In Cloudflare: open the domain -> **DNS -> Records** and add (set Proxy status to **DNS only**, grey cloud):
+   - Four **A** records, Name `@`, pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - One **CNAME**, Name `www`, Target `YOUR-GITHUB-USERNAME.github.io`
+3. Wait a few minutes to a few hours, then tick **Enforce HTTPS** in GitHub Pages settings.
 
 ## Things to fill in (search index.html for `[`)
 
@@ -26,4 +28,4 @@ A simple static website (no database, no coding tools needed). It works on GitHu
 
 ## Changing a phone number
 
-The WhatsApp number is in the links that start with `https://wa.me/254704615118`. Change the digits (country code first, no + or spaces).
+The WhatsApp number is in the links that start with `https://wa.me/254780708415`. Change the digits (country code first, no + or spaces).
