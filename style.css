@@ -136,7 +136,7 @@ figcaption{font-size:.85rem;color:#6b625c;margin-top:.5rem}
 .photo-fig{text-align:center;margin:1rem 0}
 .photo-fig img{display:inline-block;max-width:260px;background:#fff;border-radius:14px;padding:.6rem;box-shadow:0 2px 10px rgba(0,0,0,.06)}
 .page-hero.photo{background:linear-gradient(rgba(28,25,23,.9),rgba(28,25,23,.82)),var(--hero-img) center/cover no-repeat}
-.bulk-photo{height:230px;border-radius:10px;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 70%,rgba(247,147,30,.45),rgba(247,147,30,0) 65%),#2a2522;border:1px solid #463d38;overflow:hidden}
+.bulk-photo{height:230px;border-radius:10px;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden}
 .bulk-photo img{max-height:200px;width:auto;max-width:92%;object-fit:contain}
 .inline-link{color:var(--ember);font-weight:600}
 .page-hero.has-img{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;align-items:center}
@@ -152,3 +152,5 @@ figcaption{font-size:.85rem;color:#6b625c;margin-top:.5rem}
 .photo-pair img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;display:block}
 .photo-pair figcaption{text-align:center}
 @media (max-width:600px){.photo-pair{grid-template-columns:1fr}}
+
+.banner .cta-row{justify-content:center}
