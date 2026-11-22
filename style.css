@@ -87,3 +87,13 @@ details p{margin-top:.6rem}
 .compare thead th:nth-child(2){color:var(--ember)}
 .compare tbody th{font-weight:600}
 .compare tbody tr:last-child th,.compare tbody tr:last-child td{border-bottom:none}
+
+.photo-slot.has-img{border:none;background:#fff;height:260px;padding:.6rem}
+.photo-slot.has-img img{width:100%;height:100%;object-fit:contain}
+.wholesale{margin-top:1.5rem;text-align:center}
+.wholesale a{color:var(--ember);font-weight:600}
+
+.pack-photo{width:100%;height:230px;object-fit:contain;background:#fff;border-radius:10px;margin-bottom:1rem}
+.bulk-box{height:230px;border-radius:10px;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#3a312d,#231f1d);border:2px dashed #6b625c;color:var(--ember);font-size:1.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.price{font-size:1.6rem;font-weight:800;color:#fff;line-height:1.2}
+.card-dark .size{margin-bottom:.6rem}
